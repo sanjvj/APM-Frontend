@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .underline-animation {
+      @apply relative;
+    }
+    .underline-animation::after {
+      @apply absolute content-[''] sm:w-full h-0.5 bg-[#F7AE1C] left-0 bottom-[-5px] rounded-md scale-x-100 origin-bottom-right hover:origin-bottom-left transition-transform duration-500;
+    }
+  }
+
+  .status-received {
+    background-color: #e7b7ba; /* Blue */
+  }
+  
+  .status-processing {
+    background-color: #feff67; /* Yellow */
+  }
+  
+  .status-shipped {
+    background-color:#f9bf90 ; /* Cyan */
+  }
+  
+  .status-delivered {
+    background-color: #98ff66; /* Green */
+  }
+  
+  .status-cancelled {
+    background-color  : #ff3200; /* Red */
+  }

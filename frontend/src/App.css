@@ -1,0 +1,40 @@
+/* Apply a yellow filter to the SVG */
+.filter-yellow {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(93%) saturate(2433%) hue-rotate(359deg) brightness(103%) contrast(101%);
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #F7AE1C;
+    cursor: pointer;
+  }
+  
+  input[type='range']::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #F7AE1C;
+    cursor: pointer;
+  }
+  
+  input[type='range']::-ms-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #F7AE1C;
+    cursor: pointer;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
